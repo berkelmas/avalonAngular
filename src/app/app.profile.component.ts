@@ -6,7 +6,7 @@ import {trigger, state, transition, style, animate} from '@angular/animations';
     template: `
         <div style="display: flex; justify-content: center;" class="profile" [ngClass]="{'profile-expanded':active}">
             <a href="#" (click)="onClick($event)">
-                <span class="profile-name">Isabel Oliviera</span>
+                <span class="profile-name">Oğuzhan Açıkgöz</span>
             </a>
         </div>
 

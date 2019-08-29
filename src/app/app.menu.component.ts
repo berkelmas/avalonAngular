@@ -27,51 +27,10 @@ export class AppMenuComponent implements OnInit {
     ngOnInit() {
         this.model = [
             {label: 'Dashboard', icon: 'fa fa-fw fa-home', routerLink: ['/']},
-            {
-                label: 'Customization', icon: 'fa fa-fw fa-bars' , badge: '8',
-                items: [
-                    {label: 'Static Menu', icon: 'fa fa-fw fa-bars',  command: () => this.app.changeToStaticMenu()},
-                    {label: 'Overlay Menu', icon: 'fa fa-fw fa-bars',  command: () => this.app.changeToOverlayMenu()},
-                    {label: 'Slim Menu', icon: 'fa fa-fw fa-bars',  command: () => this.app.changeToSlimMenu()},
-                    {label: 'Horizontal Menu', icon: 'fa fa-fw fa-bars',  command: () => this.app.changeToHorizontalMenu()},
-                    {label: 'Inline Profile', icon: 'fa fa-sun-o fa-fw',  command: () => this.app.profileMode = 'inline'},
-                    {label: 'Top Profile', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.profileMode = 'top'},
-                    {label: 'Light Menu', icon: 'fa fa-sun-o fa-fw',  command: () => this.app.darkMenu = false},
-                    {label: 'Dark Menu', icon: 'fa fa-moon-o fa-fw',  command: () => this.app.darkMenu = true}
-                ]
-            },
-
-            {
-                label: 'Components', icon: 'fa fa-fw fa-sitemap',
-                items: [
-                    {label: 'Sample Page', icon: 'fa fa-fw fa-columns', routerLink: ['/sample']},
-                    {label: 'Forms', icon: 'fa fa-fw fa-code', routerLink: ['/forms']},
-                    {label: 'Data', icon: 'fa fa-fw fa-table', routerLink: ['/data']},
-                    {label: 'Panels', icon: 'fa fa-fw fa-list-alt', routerLink: ['/panels']},
-                    {label: 'Overlays', icon: 'fa fa-fw fa-square', routerLink: ['/overlays']},
-                    {label: 'Menus', icon: 'fa fa-fw fa-minus-square-o', routerLink: ['/menus']},
-                    {label: 'Messages', icon: 'fa fa-fw fa-circle-o-notch', routerLink: ['/messages']},
-                    {label: 'Charts', icon: 'fa fa-fw fa-area-chart', routerLink: ['/charts']},
-                    {label: 'File', icon: 'fa fa-fw fa-arrow-circle-o-up', routerLink: ['/file']},
-                    {label: 'Misc', icon: 'fa fa-fw fa-user-secret', routerLink: ['/misc']}
-                ]
-            },
-
-            {
-                label: 'Template Pages', icon: 'fa fa-fw fa-life-saver',
-                items: [
-                    {label: 'Empty Page', icon: 'fa fa-fw fa-square-o', routerLink: ['/empty']},
-                    {label: 'Landing Page', icon: 'fa fa-fw fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
-                    {label: 'Login Page', icon: 'fa fa-fw fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
-                    {label: 'Error Page', icon: 'fa fa-fw fa-exclamation-circle', url: 'assets/pages/error.html', target: '_blank'},
-                    {label: 'Not Found Page', icon: 'fa fa-fw fa-times', url: 'assets/pages/notfound.html', target: '_blank'},
-                    {label: 'Access Denied Page', icon: 'fa fa-fw fa-exclamation-triangle',
-                        url: 'assets/pages/access.html', target: '_blank'}
-                ]
-            },
-
-            {label: 'Utils', icon: 'fa fa-fw fa-wrench', routerLink: ['/utils']},
-            {label: 'Documentation', icon: 'fa fa-fw fa-book', routerLink: ['/documentation']}
+            {label: 'Postfach', icon: 'fa fa-fw fa-envelope', routerLink: ['/postfach']},
+            {label: 'Honorarkonto', icon: 'fa fa-fw fa-money', routerLink: ['/honorarkonto']},
+            {label: 'Honorarbestand', icon: 'fa fa-fw fa-file', routerLink: ['/honorarbestand']},
+            {label: 'Neue Honorarvereinbarung', icon: 'fa fa-fw fa-plus', routerLink: ['/neuehonorarvereinbarung']}
         ];
     }
 

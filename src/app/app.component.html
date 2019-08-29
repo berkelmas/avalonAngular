@@ -5,8 +5,8 @@
 
     <app-topbar></app-topbar>
 
-    <div class="layout-menu-container" [ngClass]="{'layout-menu-dark':darkMenu}" (click)="onMenuClick($event)">
-        <p-scrollPanel #layoutMenuScroller [style]="{height: '100%' }">
+    <div class="layout-menu-container" style="border-radius: 10px;" [ngClass]="{'layout-menu-dark':darkMenu}" (click)="onMenuClick($event)">
+        <p-scrollPanel style="z-index: 101;" #layoutMenuScroller [style]="{height: '100%' }">
             <div class="menu-scroll-content">
                 <app-inline-profile *ngIf="profileMode=='inline'&&!isHorizontal()"></app-inline-profile>
                 <app-menu [reset]="resetMenu"></app-menu>
@@ -20,6 +20,8 @@
     
     <div class="layout-mask"></div>
     
-    <app-footer></app-footer>
+    <div style="position: fixed; width: 100%; bottom: 0;">
+        <app-footer></app-footer>
+    </div>
 
 </div>

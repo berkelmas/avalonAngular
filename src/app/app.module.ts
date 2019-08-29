@@ -97,6 +97,7 @@ import {CarService} from './demo/service/carservice';
 import {CountryService} from './demo/service/countryservice';
 import {EventService} from './demo/service/eventservice';
 import {NodeService} from './demo/service/nodeservice';
+import { PostfachComponentComponent } from './postfach-component/postfach-component.component';
 
 @NgModule({
     imports: [
@@ -180,20 +181,11 @@ import {NodeService} from './demo/service/nodeservice';
         AppFooterComponent,
         AppProfileComponent,
         DashboardDemoComponent,
-        SampleDemoComponent,
-        FormsDemoComponent,
-        DataDemoComponent,
-        PanelsDemoComponent,
-        OverlaysDemoComponent,
-        MenusDemoComponent,
-        MessagesDemoComponent,
-        MessagesDemoComponent,
-        MiscDemoComponent,
+
         ChartsDemoComponent,
         EmptyDemoComponent,
-        FileDemoComponent,
-        UtilsDemoComponent,
-        DocumentationComponent
+
+        PostfachComponentComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

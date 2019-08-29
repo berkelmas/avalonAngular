@@ -4,9 +4,9 @@ import {AppComponent} from './app.component';
 @Component({
     selector: 'app-footer',
     template: `
-        <div class="layout-footer">
+        <div style="background-color : white; padding: 10px;" class="layout-footer">
             <span class="footer-text-left">
-                <img src="assets/layout/images/logo-dark.png" />
+                <img style="height: 35px; border-radius: 5px;" src="assets/honorarimages/honorar-konzept-logo.jpg" />
             </span>
             <span class="footer-text-right">
                 <a href="#"><i class="fa fa-facebook"></i></a>
