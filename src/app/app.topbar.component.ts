@@ -5,8 +5,8 @@ import {AppComponent} from './app.component';
     selector: 'app-topbar',
     template: `
         <div class="topbar clearfix">
-            <div class="topbar-left">
-                <img src="assets/layout/images/logo.png" class="topbar-logo" />
+            <div style="display: flex; justify-content: center; border-radius: 10px;" class="topbar-left">
+                <img style="border-radius: 2px; box-shadow: 0 0 10px rgba(black ,0.6);" src="assets/honorarimages/honorar-konzept-logo.jpg" class="topbar-logo" />
             </div>
 
             <div class="topbar-right">

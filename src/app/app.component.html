@@ -1,9 +1,5 @@
-<div class="layout-wrapper" (click)="onLayoutClick()"
-    [ngClass]="{'menu-layout-static': !isOverlay(),
-                'menu-layout-overlay': isOverlay(),
-                'layout-menu-overlay-active': overlayMenuActive,
-                'menu-layout-horizontal': isHorizontal(),
-                'menu-layout-slim': isSlim(),
+<div class="layout-wrapper menu-layout-static" (click)="onLayoutClick()"
+    [ngClass]="{
                 'layout-menu-static-inactive': staticMenuDesktopInactive,
                 'layout-menu-static-active': staticMenuMobileActive}">
 

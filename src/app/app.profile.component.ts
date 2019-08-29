@@ -4,12 +4,9 @@ import {trigger, state, transition, style, animate} from '@angular/animations';
 @Component({
     selector: 'app-inline-profile',
     template: `
-        <div class="profile" [ngClass]="{'profile-expanded':active}">
+        <div style="display: flex; justify-content: center;" class="profile" [ngClass]="{'profile-expanded':active}">
             <a href="#" (click)="onClick($event)">
-                <img class="profile-image" src="assets/layout/images/avatar.png" />
                 <span class="profile-name">Isabel Oliviera</span>
-                <i class="fa fa-fw fa-caret-down"></i>
-                <span class="profile-role">Marketing</span>
             </a>
         </div>
 
