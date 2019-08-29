@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+$primaryColor:#408f94;
+$primaryTextColor:#ffffff;
+$inputFocusBorderColor:#408f94;
+$inputFocusBorderShadowColor:rgba(0,123,255,.25);
+$highlightBgColor:#408f94;
+$highlightTextColor:#ffffff;
+$headerBgColor:#f5f5f5;
+$headerHoverBgColor:#dcdcdc;
+$headerHoverBorderColor:#c4c4c4;
+$headerTextColor:#292B2C;
+$headerBorderColor:#dddddd;
+$headerIconColor:#999999;
+$headerIconHoverColor:#bd9090;
+$datableEvenRowBgColor:#f9f9f9;
+$datatableHoverBgColor:#f5f5f5;
+$buttonTextColor:#ffffff;
+$buttonBgColor:#408f94;
+$buttonBorderColor:#408f94;
+$buttonHoverBgColor: darken(#408f94, 20%);
+$buttonHoverBorderColor:darken(#408f94, 20%);
+$buttonActiveBgColor:#408f94;
+$buttonActiveBorderColor:#408f94;
+$buttonFocusBorderShadow:rgba(0,123,255,.5);
+
+@import './assets/sass/theme-v4/_theme';
+
+$topbarLeftGradientStartBgColor:#408f94;
+$topbarLeftGradientEndBgColor: lighten(#408f94, 20%);
+$topbarRightGradientStartBgColor: #408f94;
+$topbarRightGradientEndBgColor: lighten(#408f94, 20%);
+$topbarTextColor:#ffffff;
+$menuGradientStartBgColor:#ffffff;
+$menuGradientEndBgColor:#ffffff;
+$menuitemHoverBgColor:#e8e8e8;
+$menuitemActiveColor: #408f94;
+$menuitemActiveBgColor:#e8e8e8;
+$menuButtonBgColor:#ffffff;
+$menuButtonColor:#408f94;
+$badgeBgColor: #408f94;
+$badgeColor:#ffffff;
+$darkMenuGradientStartBgColor:#363a41;
+$darkMenuGradientEndBgColor:#363a41;
+$darkMenuHoverBgColor:#4a4d54;
+$darkMenuMenuitemColor:#ffffff;
+$darkMenuMenuitemActiveColor:#ffe57f;
+$darkMenuMenuitemActiveBgColor:#282b30;
+
+//Bootstrap V4
+@import './assets/sass/layout-v4/_layout';
