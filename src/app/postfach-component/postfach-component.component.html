@@ -1,3 +1,32 @@
-<p>
-  postfach-component works!
-</p>
+<div class="ui-g">
+  <div class="ui-g-12">
+      <div class="card">
+
+      <kendo-grid
+      [kendoGridBinding]="gridData | async"
+      [pageSize]="5"
+      [pageable]="{
+        buttonCount: 10,
+        info: true,
+        type: 'input',
+        pageSizes: true,
+        previousNext: 'previousNext'
+      }"
+      [sortable]="true"
+      [filterable]="true"
+    >
+      <kendo-grid-column field="nr" title="Nr" width="100" [filterable]="false">
+      </kendo-grid-column>
+      <kendo-grid-column field="beshreibung" title="Beshreibung">
+      </kendo-grid-column>
+      <kendo-grid-column field="kundle" title="Kundle" width="240">
+      </kendo-grid-column>
+      <kendo-grid-column field="datum" title="Datum" width="180" format="{0:d}">
+      </kendo-grid-column>
+    </kendo-grid>
+
+
+      </div>
+  </div>
+  <br><br><br><br><br>
+</div>

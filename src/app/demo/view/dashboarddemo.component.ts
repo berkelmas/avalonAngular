@@ -8,6 +8,12 @@ import {SelectItem} from 'primeng/primeng';
     templateUrl: './dashboard.component.html'
 })
 export class DashboardDemoComponent implements OnInit {
+    pieData;
+
+    public kendoPieData: any = [
+        { category: 'A', value: 0.42 },
+        { category: 'B', value: 0.58 }
+    ]
 
     cities: SelectItem[];
 
@@ -68,5 +74,23 @@ export class DashboardDemoComponent implements OnInit {
         this.fullcalendarOptions = {
             defaultDate: '2016-01-12'
         };
+
+        this.pieData = {
+            labels: ['A', 'B', 'C'],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        '#FFC107',
+                        '#03A9F4',
+                        '#4CAF50'
+                    ],
+                    hoverBackgroundColor: [
+                        '#FFE082',
+                        '#81D4FA',
+                        '#A5D6A7'
+                    ]
+                }]
+            };
     }
 }
